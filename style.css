@@ -1,0 +1,123 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f0f0;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #A62C2B; /* Unified deep red */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav button {
+    background-color: #A62C2B; /* Unified deep red */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+nav button:hover {
+    background-color: #A62C2B; /* Unified deep red */
+}
+
+nav button:disabled {
+    color: #D98880; /* Reddish arrow color */
+    opacity: 0.7;   /* Make it blend in */
+    cursor: not-allowed;
+}
+
+#current-date {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#curation-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-left: 5px solid #A62C2B; /* Unified deep red */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.card h2 {
+    font-size: 1.4em;
+    color: #A62C2B; /* Unified deep red */
+    margin-top: 0;
+}
+
+.card h3 {
+    font-size: 1.1em;
+    color: #555;
+    font-weight: normal;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    flex-grow: 1;
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+.read-more {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.read-more a {
+    color: #A62C2B; /* Unified deep red */
+    text-decoration: none;
+    font-weight: bold;
+    transition: text-decoration 0.3s;
+}
+
+.read-more a:hover {
+    text-decoration: underline;
+}
+
+.loading {
+    text-align: center;
+    font-size: 1.2em;
+    color: #555;
+}
