@@ -121,3 +121,25 @@ nav button:disabled {
     font-size: 1.2em;
     color: #555;
 }
+
+.kpf {
+    margin-top: 32px;
+    padding: 16px 4px;
+    border-top: 1px solid #e3d3d3;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: #666;
+}
+
+.kpf b {
+    color: #333;
+}
+
+.kpf img {
+    height: 26px;
+    width: auto;
+    display: block;
+}
